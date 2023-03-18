@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold leading-none" href="#">
+          <img
+            src="image.png"
+            class="h-24 mx-12"
+            alt="logo"
+            viewBox="0 0 10240 10240"
+          />
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-mobilemenu flex items-center text-red-600 p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="recipe.html"
+              >Recipes</a
+            >
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+  
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="#">Contact</a>
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="#"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <a
+          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign In</a
+        >
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-red-600 hover:bg-red-700 text-sm text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign up</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img
+                src="image.png"
+                class="h-12"
+                alt="logo"
+                viewBox="0 0 10240 10240"
+              />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="recipe.html"
+                  >Recipe</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+                href="#"
+                >Sign in</a
+              >
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-red-600 hover:bg-red-700 rounded-xl"
+                href="#"
+                >Sign Up</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2023</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+      
+    </div>
+    <div class="min-h-screen bg-gray-100 px-16 py-5 space-y-3">
+      <div class="flex justify-center">
+        <img src="http://adamospasta.com.au/wp-content/uploads/2017/06/cooking-tips.jpg" alt="Spaghetti">
+      </div>  
+      
+      <div class="space-y-2">
+        <h1 class="text-lg font-bold">Information :</h1>
+      <div>
+        <span>
+          Spaghetti is a type of pasta that is long, thin, and cylindrical in shape. It is a popular staple food in Italian cuisine and is often served with a variety of sauces and toppings.
+
+          To prepare spaghetti, the pasta is boiled in a pot of salted water until it is cooked to the desired texture, which is typically al dente, or firm to the bite. The cooked spaghetti is then drained and can be served immediately or mixed with a sauce.
+          
+          There are countless types of sauces that can be served with spaghetti, ranging from simple tomato sauce to more complex meat-based sauces, such as Bolognese. Other popular toppings include olive oil, garlic, and grated cheese.
+          
+          In addition to traditional Italian cuisine, spaghetti has become a popular ingredient in many other types of dishes, such as spaghetti carbonara, spaghetti and meatballs, and spaghetti with clam sauce.
+          
+          Spaghetti is a versatile and easy-to-prepare food that can be enjoyed by people of all ages and dietary preferences. It can be paired with a variety of vegetables, proteins, and sauces to create a delicious and satisfying meal.
+        </span>
+      </div>
+      <div>
+        <h1 class="text-lg font-bold">Ingredients :</h1>
+        <ul class="list-disc pl-5">
+          <li>400 grams spaghetti</li>
+          <li>2 tbsp oil</li>
+          <li>1 pc onion</li>
+          <li>5 cloves garlic</li>
+          <li>½ kg ground pork</li>
+          <li>2 pcs Knorr Pork Broth Cubes</li>
+          <li>2 tbsp tomato paste</li>
+          <li>500 grams tomato sauce</li>
+          <li>½ cup sugar</li>
+          <li>½ tsp pepper</li>
+          <li>salt to taste</li>
+        </ul>
+      </div>
+    
+      <div>
+        <h1 class="text-lg font-bold">Instructions :</h1>
+        <ul class="list-decimal pl-5">
+          <li>First, cook the spaghetti noodles according to package directions. Drain well and set aside. Leave some pasta water for later use.</li>
+          <li>Next, get a pan and make it nice and hot over medium heat. Pour some oil and throw in the onions and garlic. Cook until light brown. Then add the ground pork and cook until the color changes.</li>
+          <li>Add Knorr Pork Cubes, stir well to dissolve before adding the tomato paste and tomato sauce. Just sauté this for 2 minutes.</li>
+          <li>Now, add sugar, pepper and water and continue to simmer over medium-low heat for 15-20 minutes until sauce has slightly thickened. Give this a nice seasoning of salt. You can add more sugar if preferred. You can also use the remaining pasta water to add starch and body to the sauce.</li>
+          <li>Get a big platter ready for your cooked spaghetti noodles and pour the sauce on top with a sprinkle of grated cheese.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-center w-full py-3  bg-stone-800 text-gray-200">
+    <div class="text-center">
+      <p>© 2023 Copyright™. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobilemenu = document.querySelectorAll(".navbar-mobilemenu");
+      const menu = document.querySelectorAll(".navbar-menu");
+
+      if (mobilemenu.length && menu.length) {
+        for (var i = 0; i < mobilemenu.length; i++) {
+          mobilemenu[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll(".navbar-close");
+      const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+    });
+  </script>
+</html>

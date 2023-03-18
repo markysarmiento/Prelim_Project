@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-200">
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+      <a class="text-3xl font-bold leading-none" href="#">
+        <img
+          src="image.png"
+          class="h-24 mx-12"
+          alt="logo"
+          viewBox="0 0 10240 10240"
+        />
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-mobilemenu flex items-center text-red-600 p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a class="text-sm text-black hover:text-gray-500" href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm text-black hover:text-gray-500" href="recipe.html"
+            >Recipes</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+
+        <li>
+          <a class="text-sm text-black hover:text-gray-500" href="#">Contact</a>
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm text-black hover:text-gray-500" href="#"
+            >About Us</a
+          >
+        </li>
+      </ul>
+      <a
+        class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+        href="#"
+        >Sign In</a
+      >
+      <a
+        class="hidden lg:inline-block py-2 px-6 bg-red-600 hover:bg-red-700 text-sm text-white font-bold rounded-xl transition duration-200"
+        href="#"
+        >Sign up</a
+      >
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img
+              src="image.png"
+              class="h-12"
+              alt="logo"
+              viewBox="0 0 10240 10240"
+            />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                href="recipe.html"
+                >Recipe</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                href="#"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+              href="#"
+              >Sign in</a
+            >
+            <a
+              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-red-600 hover:bg-red-700 rounded-xl"
+              href="#"
+              >Sign Up</a
+            >
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright © 2023</span>
+          </p>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-3 gap-10">
+      <div
+        class="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+      >
+        <div class="max-w-md mx-auto">
+          <div
+            class="h-[236px]"
+            style="
+              background-image: url(https://www.tastingtable.com/img/gallery/15-ingredients-that-will-seriously-elevate-your-steak/l-intro-1663169111.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="p-4 sm:p-6">
+            <p class="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+              Steak
+            </p>
+            <p class="text-[#7C7C80] font-[15px] mt-6">
+              Steak is a dish made from a cut of beef that is typically grilled,
+              pan-fried, or broiled, and is known for its rich, meaty flavor and
+              texture.
+            </p>
+            <a
+              target="_blank"
+              href="menu1.html"
+              class="block mt-10 w-full px-4 py-3 font-medium text-white tracking-wide text-center capitalize transition-colors duration-300 transform bg-red-600 rounded-[14px] hover:bg-red-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+            >
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+      >
+        <div class="max-w-md mx-auto">
+          <div
+            class="h-[236px]"
+            style="
+              background-image: url(https://static01.nyt.com/images/2015/10/15/dining/15RECIPE20DIN/15RECIPE20DIN-threeByTwoMediumAt2X-v3.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="p-4 sm:p-6">
+            <p class="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+              Lasagna
+            </p>
+            <p class="text-[#7C7C80] font-[15px] mt-6">
+              Lasagna is an Italian pasta dish made by layering flat pasta
+              sheets with cheese, meat, and tomato sauce and then baked until
+              golden and delicious.
+            </p>
+            <a
+              target="_blank"
+              href="menu2.html"
+              class="block mt-10 w-full px-4 py-3 font-medium text-white tracking-wide text-center capitalize transition-colors duration-300 transform bg-red-600 rounded-[14px] hover:bg-red-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+            >
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+      >
+        <div class="max-w-md mx-auto">
+          <div
+            class="h-[236px]"
+            style="
+              background-image: url(https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="p-4 sm:p-6">
+            <p class="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+              Spaghetti
+            </p>
+            <p class="text-[#7C7C80] font-[15px] mt-6">
+              Spaghetti is a type of long, thin pasta that is typically boiled
+              and served with a variety of sauces, such as tomato, meat, or
+              cream-based sauces.
+            </p>
+            <a
+              target="_blank"
+              href="menu3.html"
+              class="block mt-10 w-full px-4 py-3 font-medium text-white tracking-wide text-center capitalize transition-colors duration-300 transform bg-red-600 rounded-[14px] hover:bg-red-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+            >
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-2 gap-10 my-12">
+      <div
+        class="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+      >
+        <div class="max-w-md mx-auto">
+          <div
+            class="h-[236px]"
+            style="
+              background-image: url(https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="p-4 sm:p-6">
+            <p class="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+              Carbonara
+            </p>
+            <p class="text-[#7C7C80] font-[15px] mt-6">
+              Carbonara is a classic Italian pasta dish made with spaghetti or
+              other pasta, eggs, cheese, and bacon or pancetta, creating a
+              creamy and savory sauce.
+            </p>
+            <a
+              target="_blank"
+              href="menu4.html"
+              class="block mt-10 w-full px-4 py-3 font-medium text-white tracking-wide text-center capitalize transition-colors duration-300 transform bg-red-600 rounded-[14px] hover:bg-red-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+            >
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+      >
+        <div class="max-w-md mx-auto">
+          <div
+            class="h-[236px]"
+            style="
+              background-image: url(https://www.budgetbytes.com/wp-content/uploads/2022/01/Shrimp-Alfredo-Pasta-bowl2.jpg);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="p-4 sm:p-6">
+            <p class="font-bold text-gray-700 text-[22px] leading-7 mb-1">
+              Alfredo
+            </p>
+            <p class="text-[#7C7C80] font-[15px] mt-6">
+              Alfredo is a rich and creamy pasta sauce made with butter, heavy
+              cream, and parmesan cheese, often served with fettuccine pasta.
+            </p>
+            <a
+              target="_blank"
+              href="menu5.html"
+              class="block mt-10 w-full px-4 py-3 font-medium text-white tracking-wide text-center capitalize transition-colors duration-300 transform bg-red-600 rounded-[14px] hover:bg-red-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80"
+            >
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer-center w-full py-3 bg-stone-800 text-gray-200">
+      <div class="text-center">
+        <p>© 2023 Copyright™. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobilemenu = document.querySelectorAll(".navbar-mobilemenu");
+      const menu = document.querySelectorAll(".navbar-menu");
+
+      if (mobilemenu.length && menu.length) {
+        for (var i = 0; i < mobilemenu.length; i++) {
+          mobilemenu[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll(".navbar-close");
+      const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+    });
+  </script>
+</html>

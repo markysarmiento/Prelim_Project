@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold leading-none" href="#">
+          <img
+            src="image.png"
+            class="h-24 mx-12"
+            alt="logo"
+            viewBox="0 0 10240 10240"
+          />
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-mobilemenu flex items-center text-red-600 p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="recipe.html"
+              >Recipes</a
+            >
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+  
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="#">Contact</a>
+          </li>
+          <li class="text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              class="w-4 h-4 current-fill"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </li>
+          <li>
+            <a class="text-sm text-black hover:text-gray-500" href="#"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <a
+          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign In</a
+        >
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-red-600 hover:bg-red-700 text-sm text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign up</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img
+                src="image.png"
+                class="h-12"
+                alt="logo"
+                viewBox="0 0 10240 10240"
+              />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="recipe.html"
+                  >Recipe</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-red-200 hover:text-red-600 rounded"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+                href="#"
+                >Sign in</a
+              >
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-red-600 hover:bg-red-700 rounded-xl"
+                href="#"
+                >Sign Up</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2023</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+      
+    </div>
+    <div class="min-h-screen bg-gray-100 px-16 py-5 space-y-3">
+      <div class="flex justify-center">
+        <img src="https://d31qjkbvvkyanm.cloudfront.net/images/recipe-images/slow-cooker-lasagna-detail-29924a42.jpg" alt="Lasagna">
+      </div>  
+      
+      <div class="space-y-2">
+        <h1 class="text-lg font-bold">Information :</h1>
+      <div>
+        <span>
+          Lasagna is a classic Italian dish that is typically made with layers of wide, flat noodles, cheese, and a tomato-based sauce. The dish can also include meat, vegetables, or other ingredients.
+
+Traditionally, the pasta sheets used in lasagna are made from a simple dough of flour, eggs, and water. The dough is rolled out into thin sheets and then boiled before being layered with the other ingredients.
+
+The cheese used in lasagna is usually a mixture of ricotta, mozzarella, and parmesan. The tomato-based sauce is often made with ground beef, onions, garlic, and tomato sauce or canned tomatoes.
+
+To make lasagna, the pasta sheets are layered with the cheese and sauce mixture, and then baked in the oven until the cheese is melted and bubbly. The dish is often served with a side salad and garlic bread.
+
+Lasagna can be made in advance and reheated, making it a popular option for entertaining. It can also be customized to suit different tastes and dietary preferences by using alternative ingredients, such as gluten-free noodles, tofu or plant-based meat substitutes, and non-dairy cheese.
+
+Overall, lasagna is a hearty, comforting dish that is beloved by many and can be enjoyed as a main course or as part of a larger Italian feast.
+        </span>
+      </div>
+      <div>
+        <h1 class="text-lg font-bold">Ingredients :</h1>
+        <ul class="list-disc pl-5">
+          <li>1 pound sweet Italian sausage</li>
+          <li>¾ pound lean ground beef</li>
+          <li>½ cup minced onion</li>
+          <li>2 cloves garlic, crushed</li>
+          <li>1 (28 ounce) can crushed tomatoes</li>
+          <li>2 (6.5 ounce) cans canned tomato sauce</li>
+          <li>2 (6 ounce) cans tomato paste</li>
+          <li>½ cup water</li>
+          <li>2 tablespoons white sugar</li>
+          <li>4 tablespoons chopped fresh parsley, divided</li>
+          <li>1 ½ teaspoons dried basil leaves</li>
+          <li>1 ½ teaspoons salt, divided, or to taste</li>
+          <li>1 teaspoon Italian seasoning</li>
+          <li>½ teaspoon fennel seeds</li>
+          <li>¼ teaspoon ground black pepper</li>
+          <li>12 lasagna noodles</li>
+          <li>16 ounces ricotta cheese</li>
+          <li>1 egg</li>
+          <li>¾ pound mozzarella cheese, sliced</li>
+          <li>¾ cup grated Parmesan cheese</li>
+        </ul>
+      </div>
+  
+      <div>
+        <h1 class="text-lg font-bold">Instructions :</h1>
+        <ul class="list-decimal pl-5">
+          <li>Cook sausage, ground beef, onion, and garlic in a Dutch oven over medium heat until well browned. Stir in crushed tomatoes, tomato sauce, tomato paste, and water. Season with sugar, 2 tablespoons parsley, basil, 1 teaspoon salt, Italian seasoning, fennel seeds, and pepper. Simmer, covered, for about 1 1/2 hours, stirring occasionally.</li>
+          <li>Bring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining 2 tablespoons parsley, and 1/2 teaspoon salt.</li>
+          <li>Preheat the oven to 375 degrees F (190 degrees C).</li>
+          <li>To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13-inch baking dish. Arrange 6 noodles lengthwise over meat sauce. Spread with 1/2 of the ricotta cheese mixture. Top with 1/3 of the mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese. Repeat layers, and top with remaining mozzarella and Parmesan cheese. Cover with foil: to prevent sticking, either spray foil with cooking spray or make sure the foil does not touch the cheese.</li>
+          <li>Bake in the preheated oven for 25 minutes. Remove the foil and bake for an additional 25 minutes. Rest lasagna for 15 minutes before serving.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-center w-full py-3  bg-stone-800 text-gray-200">
+    <div class="text-center">
+      <p>© 2023 Copyright™. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobilemenu = document.querySelectorAll(".navbar-mobilemenu");
+      const menu = document.querySelectorAll(".navbar-menu");
+
+      if (mobilemenu.length && menu.length) {
+        for (var i = 0; i < mobilemenu.length; i++) {
+          mobilemenu[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll(".navbar-close");
+      const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+    });
+  </script>
+</html>
